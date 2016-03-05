@@ -1,7 +1,6 @@
 <template>
   <div id="app">
     <img class="logo" src="./assets/logo.png">
-    <hello></hello>
     <p>
       Welcome to your Vue.js app. To get started, take a look at the
       <a href="https://github.com/vuejs-templates/webpack#folder-structure" target="_blank">README</a>
@@ -19,16 +18,6 @@
     </p>
   </div>
 </template>
-
-<script>
-import Hello from './components/Hello'
-
-export default {
-  components: {
-    Hello
-  }
-}
-</script>
 
 <style>
 html {
