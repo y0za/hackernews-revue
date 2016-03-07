@@ -3,7 +3,10 @@
     <h1>Hackernews</h1>
     <ul>
       <li>score: title</li>
-      <li v-for="story in stories">{{ story.score + ': ' + story.title }}</li>
+      <li v-for="story in stories">
+        <a href="{{ story.url }}" v-if="story.url">{{ story.score + ': ' + story.title }}</a>
+        <span v-else>{{ story.score + ': ' + story.title }}</span>
+      </li>
     </ul>
   </div>
 </template>
